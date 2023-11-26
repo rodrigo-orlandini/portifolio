@@ -1,5 +1,6 @@
 import { Kantumruy_Pro } from "next/font/google";
 import type { Metadata } from "next";
+import "./globals.css";
 
 const kantumruy = Kantumruy_Pro({
 	weight: ["300", "400", "600"],
