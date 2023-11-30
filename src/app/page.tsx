@@ -1,10 +1,16 @@
 import Image from "next/image";
+import EastRoundedIcon from "@mui/icons-material/EastRounded";
 
 import profile from "public/profile.jpg";
 
-import Container from "../components/Container";
+import Container from "@/components/Container";
+import EventCard, { EventCardColorTheme } from "@/components/EventCard";
 
-const Home = () => {
+import { fetchFeaturedProjects } from "@/services/fetch-featured-projects";
+
+const Home = async () => {
+	const featuredProjects = await fetchFeaturedProjects();
+
 	return (
 		<main>
 			<section className="flex">
@@ -35,6 +41,30 @@ const Home = () => {
 						</p>
 					</div>
 				</div>
+			</section>
+
+			<section className="bg-gradient-main">
+				<Container style="py-20">
+					<div className="flex justify-between text-white">
+						<h3 className="font-semibold text-2xl">FEATURED <span className="text-light-purple">PROJECTS</span></h3>
+
+						<div className="flex">
+							<h4 className="mr-2">MORE PROJECTS</h4>
+
+							<EastRoundedIcon />
+						</div>
+					</div>
+
+					<div className="flex flex-wrap justify-between mt-8">
+						{featuredProjects.map((project, index) => ( 
+							<EventCard 
+								key={project.id} 
+								event={project} 
+								theme={EventCardColorTheme.DARK} 
+							/>
+						))}
+					</div>
+				</Container>
 			</section>
 		</main>
 	);

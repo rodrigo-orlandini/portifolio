@@ -25,8 +25,21 @@ const config: Config = {
 			},
 			boxShadow: {
         "smooth": "0 0 16px rgba(0, 0, 0, 0.16), 0 4px 32px rgba(0, 0, 0, 0.24)"
-      }
-		}
+      },
+			minHeight: {
+				"card-small": "240px",
+				"card": "320px"
+			},
+			width: {
+				"card": "32%"	
+			}
+		},
+		screens: {
+      "xs": { "min": "375px" },
+      "sm": { "min": "425px" },
+			"md": { "min": "768px" },
+      "lg": { "min": "1024px" }
+    }
   },
   plugins: []
 };

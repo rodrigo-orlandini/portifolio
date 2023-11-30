@@ -1,6 +1,6 @@
 import { EventTag } from "./event-tag";
 
-export interface EventProps {
+export interface Event {
 	id: string;
 	title: string;
 	description: string;
