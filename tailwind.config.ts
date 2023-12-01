@@ -12,7 +12,8 @@ const config: Config = {
 			"light-purple": "#A99EFF",
 			"dark": "#222A33",
 			"white": "#FFFFFF",
-			"yellow": "#FFE70E"
+			"yellow": "#FFE70E",
+			"green": "#22A367"
 		},
 		extend: {
 			backgroundImage: {

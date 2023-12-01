@@ -1,11 +1,17 @@
 "use client";
 
+import { useRouter } from "next/navigation";
+
 import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
 
 import Button from "@/components/Button";
 
 export const ResumeForm = () => {
-	const downloadResume = async () => {};
+	const router = useRouter();
+
+	const downloadResume = async () => {
+		router.push("https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/main/assets/cv-rodrigo-orlandini.pdf");
+	};
 
 	return (
 		<>

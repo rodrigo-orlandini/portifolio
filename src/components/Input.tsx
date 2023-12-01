@@ -16,7 +16,7 @@ const Input = ({
 	numberOfLines = 1
 }: InputProps) => {
 	return (
-		<div className="border-2 border-purple w-full flex items-center pl-3">
+		<div className="border-2 border-purple w-full flex items-center pl-2 lg:pl-3">
 			{hasIcon && icon}
 
 			{isMultiline ? (

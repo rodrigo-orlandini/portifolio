@@ -9,17 +9,27 @@ import ForwardToInboxIcon from "@mui/icons-material/ForwardToInbox";
 import Input from "./Input";
 import Button from "./Button";
 
+import { sendEmail } from "@/services/send-email";
+
 export const EmailForm = () => {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [description, setDescription] = useState("");
 
-	const submitEmail = () => {};
+	const submitEmail = async () => {
+		if(name.trim().length === 0 
+			|| email.trim().length === 0 
+			|| description.trim().length === 0) {
+				return null;
+			}
+
+		await sendEmail({ name, email, content: description });
+	};
 
 	return (
 		<div className="w-full">
 			<div className="flex justify-between mb-3">
-				<div className="w-2/6">
+				<div className="w-[38%]">
 					<Input 
 						placeholder="Name" 
 						value={name} 
@@ -29,7 +39,7 @@ export const EmailForm = () => {
 					/>
 				</div>
 
-				<div className="w-3/5">
+				<div className="w-[58%]">
 					<Input 
 						placeholder="Email" 
 						value={email} 

@@ -18,7 +18,7 @@ const EventCard = ({ event }: EventCardProps) => {
 		: event.description;
 
 	return (
-		<div className="bg-dark p-5 pb-3 mb-4 min-h-card-small w-full flex flex-col justify-between md:mb-0 md:w-card md:min-h-card">
+		<a href={event.accessURL} className="bg-dark p-5 pb-3 mb-4 min-h-card-small w-full flex flex-col justify-between md:mb-0 md:w-card md:min-h-card">
 			<div className="mb-4">
 				<h5 className="font-semibold text-light-purple text-lg">{event.title.toUpperCase()}</h5>
 				<p className="text-white mt-3">{description}</p>
@@ -29,7 +29,7 @@ const EventCard = ({ event }: EventCardProps) => {
 					<EventTag key={tag.id} tag={tag} />
 				))}
 			</div>
-		</div>
+		</a>
 	);
 };
 
