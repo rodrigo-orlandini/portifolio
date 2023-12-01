@@ -10,13 +10,10 @@ import { EmailForm } from "@/components/EmailForm";
 import { ResumeForm } from "@/components/ResumeForm";
 import { AboutMeForm } from "@/components/AboutMeForm";
 
-import { fetchFeaturedProjects } from "@/services/fetch-featured-projects";
-import { fetchFeaturedJobs } from "@/services/fetch-featured-jobs";
+import { featuredProjects } from "@/data/featured-projects";
+import { featuredJobs } from "@/data/featured-jobs";
 
 const Home = async () => {
-	const featuredProjects = await fetchFeaturedProjects();
-	const featuredJobs = await fetchFeaturedJobs();
-
 	return (
 		<main>
 			<section className="flex flex-col md:flex-row" id="me">

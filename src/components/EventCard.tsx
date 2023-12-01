@@ -13,7 +13,7 @@ interface EventCardProps {
 }
 
 const EventCard = ({ event }: EventCardProps) => {
-	const description = event.description.length > 100 
+	const description = event.description.length > 300 
 		? `${event.description}...` 
 		: event.description;
 

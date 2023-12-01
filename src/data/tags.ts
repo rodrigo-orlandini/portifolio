@@ -1,0 +1,94 @@
+import { randomUUID } from "node:crypto";
+import { EventTag } from "@/models/event-tag";
+
+export const tags: EventTag[] = [{
+	id: randomUUID(),
+	title: "NodeJS",
+	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/7e9b2918d04115e58f33a56a963a93e56d919885/assets/technologies/node.svg",
+	backgroundColorHexCode: "#22A367",
+	textColorHexCode: "#FFFFFF"
+}, {
+	id: randomUUID(),
+	title: "Typescript",
+	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/7e9b2918d04115e58f33a56a963a93e56d919885/assets/technologies/typescript.svg",
+	backgroundColorHexCode: "#4276B4",
+	textColorHexCode: "#FFFFFF"
+}, {
+	id: randomUUID(),
+	title: "Fastify",
+	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/7e9b2918d04115e58f33a56a963a93e56d919885/assets/technologies/fastify.svg",
+	backgroundColorHexCode: "#FFFFFF",
+	textColorHexCode: "#222A33"
+}, {
+	id: randomUUID(),
+	title: "Golang",
+	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/e8700bde79af32c5f929181f7ba4fea9fb9822d8/assets/technologies/go.svg",
+	backgroundColorHexCode: "#2DBBAE",
+	textColorHexCode: "#FFFFFF"
+}, {
+	id: randomUUID(),
+	title: "React",
+	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/7e9b2918d04115e58f33a56a963a93e56d919885/assets/technologies/react-native.svg",
+	backgroundColorHexCode: "#4276B4",
+	textColorHexCode: "#FFFFFF"
+}, {
+	id: randomUUID(),
+	title: "Express",
+	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/7e9b2918d04115e58f33a56a963a93e56d919885/assets/technologies/express.svg",
+	backgroundColorHexCode: "#FFFFFF",
+	textColorHexCode: "#222A33"
+}, {
+	id: randomUUID(),
+	title: "NestJS",
+	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/9a366e1b662df58d025f337b746db1376f96cb2a/assets/technologies/nestjs.svg",
+	backgroundColorHexCode: "#090909",
+	textColorHexCode: "#E0234E"
+}, {
+	id: randomUUID(),
+	title: "Python",
+	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/7e9b2918d04115e58f33a56a963a93e56d919885/assets/technologies/python.svg",
+	backgroundColorHexCode: "#FFE100",
+	textColorHexCode: "#222A33"
+}, {
+	id: randomUUID(),
+	title: "Docker",
+	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/5301ce14d514decb45788ae8bbeb09c8cead5266/assets/technologies/docker.svg",
+	backgroundColorHexCode: "#FFFFFF",
+	textColorHexCode: "#00ACD3"
+}, {
+	id: randomUUID(),
+	title: "HTML",
+	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/7e9b2918d04115e58f33a56a963a93e56d919885/assets/technologies/html.svg",
+	backgroundColorHexCode: "#F48E18",
+	textColorHexCode: "#FFFFFF"
+}, {
+	id: randomUUID(),
+	title: "CSS",
+	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/7e9b2918d04115e58f33a56a963a93e56d919885/assets/technologies/css.svg",
+	backgroundColorHexCode: "#4276B4",
+	textColorHexCode: "#FFFFFF"
+}, {
+	id: randomUUID(),
+	title: "Javascript",
+	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/5301ce14d514decb45788ae8bbeb09c8cead5266/assets/technologies/javascript.svg",
+	backgroundColorHexCode: "#F7DF1E",
+	textColorHexCode: "#0E141B"
+}, {
+	id: randomUUID(),
+	title: "PHP",
+	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/5301ce14d514decb45788ae8bbeb09c8cead5266/assets/technologies/php.svg",
+	backgroundColorHexCode: "#FFFFFF",
+	textColorHexCode: "#777BB3"
+}, {
+	id: randomUUID(),
+	title: "NextJS",
+	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/7e9b2918d04115e58f33a56a963a93e56d919885/assets/technologies/next.svg",
+	backgroundColorHexCode: "#FFFFFF",
+	textColorHexCode: "#222A33"
+}, {
+	id: randomUUID(),
+	title: "TailwindCSS",
+	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/7e9b2918d04115e58f33a56a963a93e56d919885/assets/technologies/tailwind.svg",
+	backgroundColorHexCode: "#00ACC1",
+	textColorHexCode: "#FFFFFF"
+}];
