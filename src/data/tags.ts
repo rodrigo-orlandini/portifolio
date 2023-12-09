@@ -1,94 +1,111 @@
 import { randomUUID } from "node:crypto";
+
 import { EventTag } from "@/models/event-tag";
+
+import node from "public/technologies/node.svg";
+import typescript from "public/technologies/typescript.svg";
+import fastify from "public/technologies/fastify.svg";
+import golang from "public/technologies/golang.svg"; //
+import react from "public/technologies/react.svg";
+import express from "public/technologies/express.svg";
+import nestjs from "public/technologies/nestjs.svg"; //
+import python from "public/technologies/python.svg";
+import docker from "public/technologies/docker.svg"; //
+import html from "public/technologies/html.svg";
+import css from "public/technologies/css.svg";
+import javascript from "public/technologies/javascript.svg"; //
+import php from "public/technologies/php.svg"; //
+import nextjs from "public/technologies/next.svg";
+import tailwindcss from "public/technologies/tailwind.svg";
 
 export const tags: EventTag[] = [{
 	id: randomUUID(),
 	title: "NodeJS",
-	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/7e9b2918d04115e58f33a56a963a93e56d919885/assets/technologies/node.svg",
+	iconURL: node,
 	backgroundColorHexCode: "#22A367",
 	textColorHexCode: "#FFFFFF"
 }, {
 	id: randomUUID(),
 	title: "Typescript",
-	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/7e9b2918d04115e58f33a56a963a93e56d919885/assets/technologies/typescript.svg",
+	iconURL: typescript,
 	backgroundColorHexCode: "#4276B4",
 	textColorHexCode: "#FFFFFF"
 }, {
 	id: randomUUID(),
 	title: "Fastify",
-	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/7e9b2918d04115e58f33a56a963a93e56d919885/assets/technologies/fastify.svg",
+	iconURL: fastify,
 	backgroundColorHexCode: "#FFFFFF",
 	textColorHexCode: "#222A33"
 }, {
 	id: randomUUID(),
 	title: "Golang",
-	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/e8700bde79af32c5f929181f7ba4fea9fb9822d8/assets/technologies/go.svg",
+	iconURL: golang,
 	backgroundColorHexCode: "#2DBBAE",
 	textColorHexCode: "#FFFFFF"
 }, {
 	id: randomUUID(),
 	title: "React",
-	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/7e9b2918d04115e58f33a56a963a93e56d919885/assets/technologies/react-native.svg",
+	iconURL: react,
 	backgroundColorHexCode: "#4276B4",
 	textColorHexCode: "#FFFFFF"
 }, {
 	id: randomUUID(),
 	title: "Express",
-	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/7e9b2918d04115e58f33a56a963a93e56d919885/assets/technologies/express.svg",
+	iconURL: express,
 	backgroundColorHexCode: "#FFFFFF",
 	textColorHexCode: "#222A33"
 }, {
 	id: randomUUID(),
 	title: "NestJS",
-	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/9a366e1b662df58d025f337b746db1376f96cb2a/assets/technologies/nestjs.svg",
+	iconURL: nestjs,
 	backgroundColorHexCode: "#090909",
 	textColorHexCode: "#E0234E"
 }, {
 	id: randomUUID(),
 	title: "Python",
-	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/7e9b2918d04115e58f33a56a963a93e56d919885/assets/technologies/python.svg",
+	iconURL: python,
 	backgroundColorHexCode: "#FFE100",
 	textColorHexCode: "#222A33"
 }, {
 	id: randomUUID(),
 	title: "Docker",
-	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/5301ce14d514decb45788ae8bbeb09c8cead5266/assets/technologies/docker.svg",
+	iconURL: docker,
 	backgroundColorHexCode: "#FFFFFF",
 	textColorHexCode: "#00ACD3"
 }, {
 	id: randomUUID(),
 	title: "HTML",
-	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/7e9b2918d04115e58f33a56a963a93e56d919885/assets/technologies/html.svg",
+	iconURL: html,
 	backgroundColorHexCode: "#F48E18",
 	textColorHexCode: "#FFFFFF"
 }, {
 	id: randomUUID(),
 	title: "CSS",
-	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/7e9b2918d04115e58f33a56a963a93e56d919885/assets/technologies/css.svg",
+	iconURL: css,
 	backgroundColorHexCode: "#4276B4",
 	textColorHexCode: "#FFFFFF"
 }, {
 	id: randomUUID(),
 	title: "Javascript",
-	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/5301ce14d514decb45788ae8bbeb09c8cead5266/assets/technologies/javascript.svg",
+	iconURL: javascript,
 	backgroundColorHexCode: "#F7DF1E",
 	textColorHexCode: "#0E141B"
 }, {
 	id: randomUUID(),
 	title: "PHP",
-	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/5301ce14d514decb45788ae8bbeb09c8cead5266/assets/technologies/php.svg",
+	iconURL: php,
 	backgroundColorHexCode: "#FFFFFF",
 	textColorHexCode: "#777BB3"
 }, {
 	id: randomUUID(),
 	title: "NextJS",
-	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/7e9b2918d04115e58f33a56a963a93e56d919885/assets/technologies/next.svg",
+	iconURL: nextjs,
 	backgroundColorHexCode: "#FFFFFF",
 	textColorHexCode: "#222A33"
 }, {
 	id: randomUUID(),
 	title: "TailwindCSS",
-	iconURL: "https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/7e9b2918d04115e58f33a56a963a93e56d919885/assets/technologies/tailwind.svg",
+	iconURL: tailwindcss,
 	backgroundColorHexCode: "#00ACC1",
 	textColorHexCode: "#FFFFFF"
 }];

@@ -10,7 +10,7 @@ export const ResumeForm = () => {
 	const router = useRouter();
 
 	const downloadResume = async () => {
-		router.push("https://raw.githubusercontent.com/rodrigo-orlandini/portifolio-api/main/assets/cv-rodrigo-orlandini.pdf");
+		router.push("https://github.com/rodrigo-orlandini/portifolio/raw/main/public/resumes/cv-rodrigo-orlandini.pdf");
 	};
 
 	return (
