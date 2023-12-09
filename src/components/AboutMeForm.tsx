@@ -1,8 +1,8 @@
 "use client";
 
-import github from "public/github.svg";
-import linkedin from "public/linkedin.svg";
-import whatsapp from "public/whatsapp.svg";
+import github from "public/social/github.svg";
+import linkedin from "public/social/linkedin.svg";
+import whatsapp from "public/social/whatsapp.svg";
 
 import LinkButton from "./LinkButton";
 

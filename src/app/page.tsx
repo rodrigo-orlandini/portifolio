@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import EastRoundedIcon from "@mui/icons-material/EastRounded";
 
-import profile from "public/profile.png";
+import profile from "public/social/profile.png";
 
 import Container from "@/components/Container";
 import EventCard, { EventCardColorTheme } from "@/components/EventCard";

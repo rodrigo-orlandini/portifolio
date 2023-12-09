@@ -7,7 +7,7 @@ interface SendEmailRequest {
 }
 
 export const sendEmail = async (data: SendEmailRequest): Promise<void> => {
-	const response = await fetch(`${apiConfig.baseURL}/owner/contact`, {
+	const response = await fetch(`${apiConfig.baseURL}/contact`, {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json"
