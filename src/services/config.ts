@@ -1,3 +1,3 @@
 export const apiConfig = {
-	baseURL: "https://portifolio-api-x01s.onrender.com"
+	baseURL: "https://portifolio-email-api.onrender.com"
 };
